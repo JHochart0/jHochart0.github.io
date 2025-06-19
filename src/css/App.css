@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    min-height:100vh;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+}
