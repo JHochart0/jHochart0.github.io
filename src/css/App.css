@@ -70,7 +70,6 @@ body{
     text-align: center;
     color: var(--gold-stellar);
     text-decoration: none;
-    font-weight: bold;
     text-shadow: 0 0 6px var(--gold-stellar);
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.1s;
     box-sizing: border-box;
