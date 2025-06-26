@@ -1,0 +1,42 @@
+:root {
+    --gold-stellar: #FFCC66;
+    --spatial-blue: #0A1E3F;
+    --spatial-blue-transparent: rgba(10, 30, 63, 0.3);
+    --void_black: #0B0B0F;
+    --white_moon: #FFFFFF;
+}
+
+.notFound404-container{
+    padding:25px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.notFound404-container p{
+    margin-top:10px;
+    font-size: 1.2rem;
+
+}
+
+#notFound404-link{
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 2px solid var(--gold-stellar);
+    background-color: var(--spatial-blue);
+    color: var(--gold-stellar);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease, transform 0.1s, text-shadow 0.3s ease;
+    box-shadow: 12px 8px 25px 10px var(--void_black);
+    margin-top:25px;
+}
+
+#notFound404-link:hover {
+    color: var(--white_moon);
+    box-shadow: 14px 10px 30px 12px var(--void_black);
+    transform: scale(1.05);
+    text-shadow: 0 0 8px var(--white_moon);
+}
+
