@@ -25,16 +25,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    display:flex;
-    flex-direction:column;
     color: var(--gold-stellar);
 }
 
 
 /********************************
-*********Navbar Section**********
+*********Header Section**********
 ********************************/
-.navbar{
+.header-container{
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -45,7 +43,7 @@ body{
     box-shadow: 0px 5px 20px var(--void_black);
 }
 
-.navbar-title{
+.header-title{
     font-family: 'Audiowide', cursive;
     font-weight: 1000;
     font-size: 2.5rem; 
@@ -54,17 +52,37 @@ body{
     text-shadow: 0 0 6px var(--gold-stellar);
 }
 
-.navbar-links{
+
+.navbar{
     display: inline-flex;
     justify-content: center;
     background-color: var(--spatial-blue);
     border: 2px solid var(--gold-stellar);
     border-radius:20px;
     box-shadow: 12px 6px 20px 8px var(--void_black);
-      
 }
 
-.navbar .navLink{
+.navbar-sticky-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.navbar-sticky {
+    background-color: var(--spatial-blue);
+    border: 2px solid var(--gold-stellar);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px var(--void_black);
+    display: inline-flex;
+    justify-content: center;
+}
+
+.navbar .navLink, .navbar-sticky .navLink{
     display: block;
     padding: 1rem 1.5rem;
     text-align: center;
@@ -76,7 +94,7 @@ body{
     border-radius:10px;
 }
 
-.navbar .navLink:hover{
+.navbar .navLink:hover, .navbar-sticky .navLink:hover{
     color: var(--white_moon);
     text-shadow: 0 0 8px var(--white_moon);
     transform: scale(1.02);
@@ -93,4 +111,28 @@ body{
     justify-content:center;
     margin:0px 30px 30px;
     padding-top:25px;
+    height : 120vh;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--gold-stellar);
+    color: var(--spatial-blue);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px var(--gold-stellar);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: var(--white_moon);
+    color: var(--spatial-blue);
+    transform: scale(1.1);
 }

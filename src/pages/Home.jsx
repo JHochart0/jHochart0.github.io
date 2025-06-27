@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home-container">
         <p>
-            Work In Progress...
+            Accueil / Work In Progress...
         </p>
         
     </div>
