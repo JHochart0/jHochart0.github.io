@@ -7,17 +7,16 @@ function ScrollToTopButton() {
 
     //useEffect to handle when we show the button or not depending on the scrolling state of the page
     useEffect(() => {
-        function toggleVisibility() {
-            if (window.pageYOffset > 100) {
-                setVisible(true);
-            } else {
-                setVisible(false);
-            }
+        function checkScrollValue() {
+            setVisible(window.scrollY > 100);
         }
 
-        window.addEventListener('scroll', toggleVisibility);
+        //check immediately the scroll value (in case the user refresh the page)
+        checkScrollValue();
 
-        return () => window.removeEventListener('scroll', toggleVisibility);
+        window.addEventListener('scroll', checkScrollValue);
+
+        return () => window.removeEventListener('scroll', checkScrollValue);
     }, []);
 
     //function to go back to top of the page when we click on the button
