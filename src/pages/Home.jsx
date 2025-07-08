@@ -1,11 +1,17 @@
 import React from 'react';
 
+import '../css/Home.css';
+
 function Home() {
   return (
     <div className="home-container">
-        <p>
-            Accueil / Work In Progress...
-        </p>
+        <div className="intro-container"></div>
+        <div>
+            <p>
+                Accueil / Work In Progress...
+            </p>
+        </div>
+        
         
     </div>
   )

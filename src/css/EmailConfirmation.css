@@ -7,19 +7,22 @@
     --white_moon: #FFFFFF;
 }
 
-.notFound404-container{
-    text-align:center;
+.emailconfirmation-container{
     display:flex;
-    align-items:center;
     flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+
 }
 
-.notFound404-container p{
+
+.emailconfirmation-p{
     margin-top:10px;
     font-size: 1.2rem;
 }
 
-#notFound404-link{
+#emailconfirmation-link{
     padding: 10px 20px;
     border-radius: 12px;
     border: 2px solid var(--gold-stellar);
@@ -33,10 +36,9 @@
     text-shadow: 0 0 6px var(--gold-stellar);
 }
 
-#notFound404-link:hover {
+#emailconfirmation-link:hover {
     color: var(--white_moon);
     box-shadow: 14px 10px 30px 12px var(--void_black);
     transform: scale(1.05);
     text-shadow: 0 0 8px var(--white_moon);
 }
-

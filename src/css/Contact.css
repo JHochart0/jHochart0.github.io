@@ -1,0 +1,123 @@
+:root {
+    --gold-stellar: #FFCC66;
+    --spatial-blue: #0A1E3F;
+    --spatial-blue-transparent: rgba(10, 30, 63, 0.3);
+    --spatial-blue-background: rgba(10, 30, 63, 0.8);
+    --void_black: #0B0B0F;
+    --white_moon: #FFFFFF;
+}
+
+.contact-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--spatial-blue-transparent);
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--void_black);
+  color: var(--gold-stellar);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 6px var(--gold-stellar);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width:650px;
+  margin:auto;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--gold-stellar);
+  background-color: var(--void_black);
+  color: var(--white_moon);
+  resize: vertical;
+  
+}
+
+.contact-form textarea{
+    height:100px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline:none;
+    border: 1px solid var(--white_moon);
+    box-shadow: 0 0 8px var(--white_moon);
+    transition: 0.2s ease-in-out;
+  
+}
+
+.contact-submit{
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--gold-stellar);
+    background-color: var(--spatial-blue);
+    color: var(--gold-stellar);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease, transform 0.1s, text-shadow 0.3s ease;
+    box-shadow: 12px 8px 25px 10px var(--void_black);
+    margin-top:25px;
+    text-decoration:none;
+    text-shadow: 0 0 6px var(--gold-stellar);
+    font-size: 1rem;
+    margin:auto;
+    width:350px;
+}
+
+.contact-submit:hover {
+    color: var(--white_moon);
+    box-shadow: 14px 10px 30px 12px var(--void_black);
+    transform: scale(1.03);
+    text-shadow: 0 0 8px var(--white_moon);
+}
+
+.contact-links {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links h2 {
+    font-size:1.8rem;
+    text-shadow: 0 0 6px var(--gold-stellar);
+}
+
+.contact-links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.contact-links li {
+    margin: 10px 0;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+}
+
+
+.contact-links a{
+    color: var(--gold-stellar);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-links a:hover {
+    color: var(--white_moon);
+    text-shadow: 0 0 6px var(--white_moon);
+}

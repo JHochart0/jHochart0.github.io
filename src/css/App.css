@@ -5,6 +5,7 @@
     --gold-stellar: #FFCC66;
     --spatial-blue: #0A1E3F;
     --spatial-blue-transparent: rgba(10, 30, 63, 0.3);
+    --spatial-blue-background: rgba(10, 30, 63, 0.8);
     --void_black: #0B0B0F;
     --white_moon: #FFFFFF;
 }
@@ -96,7 +97,7 @@ body{
     background-color: var(--spatial-blue);
     border: 2px solid var(--gold-stellar);
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 4px 10px var(--void_black);
+    box-shadow: 12px 6px 20px 8px var(--void_black);
     display: inline-flex;
     justify-content: center;
 }
@@ -122,15 +123,14 @@ body{
 /********************************
 ******Main content Section*******
 ********************************/
-.content{
-    flex:1;
+.content {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display:flex;
-    flex-direction:column;
-    text-align:center;
     justify-content:center;
-    margin:0px 30px 30px;
-    padding-top:25px;
-    height : 120vh;
+    padding: 20px;
 }
 
 .scroll-to-top-btn {
