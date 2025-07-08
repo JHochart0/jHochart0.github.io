@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,23 +6,53 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../css/Contact.css';
 
 function Contact() {
+    const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState('');
+
+    // Regex to check the format of the email address
+    const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!emailRegex.test(email)) {
+            setEmailError('Veuillez entrer une adresse email valide (ex : exemple@domaine.com).');
+            return;
+        }
+        // if ok, we submit the form
+        e.target.submit();
+    };
+
+
     return (
         <div className="contact-container">
             <h1 className="contact-title">Me contacter</h1>
 
             <form
+                onSubmit={handleSubmit}
                 action="https://formsubmit.co/6fb952b90f78235eea697297767b28be"
                 method="POST"
                 className="contact-form"
             >
+                
                 <input type="text" name="Nom" placeholder="Votre nom..." required />
-                <input type="email" name="Adresse email" placeholder="Votre adresse email..." required />
+                <input 
+                    type="text" 
+                    name="Adresse email" 
+                    placeholder="Votre adresse email..."
+                    value={email} 
+                    onChange={handleEmailChange}
+                    required
+                />
                 <textarea name="Message" placeholder="Votre message..." required />
+                {emailError && <p className="mail-error">{emailError}</p>}
                 <button type="submit" className="contact-submit">Envoyer</button>
 
                 {/* Anti-spam */}
-                <input type="hidden" name="_captcha" value="true" />
-                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_subject" value="Demande de contact depuis le portfolio"></input>
                 <input type="hidden" name="_next" value="https://jhochart0.github.io/#/email-sent" />
                 {/*<input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />*/}

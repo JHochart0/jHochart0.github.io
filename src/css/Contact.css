@@ -56,6 +56,11 @@
   
 }
 
+.mail-error{
+    color: #D9433E;
+    font-size: 1rem;
+}
+
 .contact-submit{
     padding: 10px 20px;
     border-radius: 12px;
