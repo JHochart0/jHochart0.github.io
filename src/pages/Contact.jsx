@@ -24,7 +24,8 @@ function Contact() {
                 <input type="hidden" name="_captcha" value="true" />
                 <input type="hidden" name="_template" value="box" />
                 <input type="hidden" name="_subject" value="Demande de contact depuis le portfolio"></input>
-                <input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />
+                <input type="hidden" name="_next" value="https://jhochart0.github.io/#/email-sent" />
+                {/*<input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />*/}
             </form>
 
             <div className="contact-links">
@@ -32,19 +33,19 @@ function Contact() {
                 <h2>Mes réseaux</h2>
                 <ul>
                     <li>
-                    <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jovany-hochart-414a5a289/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} className="social-icon" /> LinkedIn
                     </a>
                     </li>
 
                     <li>
-                    <a href="https://github.com/tonpseudo" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/JHochart0" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} className="social-icon" /> GitHub
                     </a>
                     </li>
 
                     <li>
-                    <a href="mailto:ton.email@exemple.com">
+                    <a href="mailto:jovanyhochart@gmail.com">
                         <FontAwesomeIcon icon={faEnvelope} className="social-icon" /> Email direct
                     </a>
                     </li>
