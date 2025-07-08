@@ -16,6 +16,7 @@ function Contact() {
         setEmail(e.target.value);
     };
 
+    // function to check if the email typed in the form is corresponding to the good format
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!emailRegex.test(email)) {
