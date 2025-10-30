@@ -40,3 +40,7 @@
     text-shadow: 0 0 8px var(--white_moon);
 }
 
+.notFound404-link-icon{
+    text-align:center;
+    margin-right:5px;
+}

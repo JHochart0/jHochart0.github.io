@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from "./Navbar.jsx";
 
+import '../css/Header.css';
+
 function Header() {
 
     //variable to detect when the page is scrolled down or not

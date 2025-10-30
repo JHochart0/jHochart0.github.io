@@ -42,3 +42,8 @@
     transform: scale(1.05);
     text-shadow: 0 0 8px var(--white_moon);
 }
+
+.emailconfirmation-link-icon{
+    text-align:center;
+    margin-right:5px;
+}
