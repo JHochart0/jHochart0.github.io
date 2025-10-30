@@ -55,8 +55,7 @@ function Contact() {
                 {/* Anti-spam */}
                 <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_subject" value="Demande de contact depuis le portfolio"></input>
-                <input type="hidden" name="_next" value="https://jhochart0.github.io/#/email-sent" />
-                {/*<input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />*/}
+                <input type="hidden" name="_next" value={`${window.location.origin}/#/email-sent`}  />
             </form>
 
             <div className="contact-links">

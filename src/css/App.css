@@ -141,8 +141,6 @@ body{
     color: var(--spatial-blue);
     border: none;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
     font-size: 1.5rem;
     cursor: pointer;
     box-shadow: 0 0 8px var(--gold-stellar);

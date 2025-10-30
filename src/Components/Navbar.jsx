@@ -7,10 +7,10 @@ function Navbar(props) {
     return (
         <nav className={className}>
             <NavLink to="/" content="Accueil" id="navbar-homeLink"/>
-            <NavLink to="/about" content="À propos" id="i"/>
-            <NavLink to="/projects" content="Projets" id="i"/>
-            <NavLink to="/skills" content="Compétences" id="i"/>
-            <NavLink to="/contact" content="Contact" id="i"/>
+            <NavLink to="/about" content="À propos" id="navbar-aboutLink"/>
+            <NavLink to="/projects" content="Projets" id="navbar-projectsLink"/>
+            <NavLink to="/skills" content="Compétences" id="navbar-skillsLink"/>
+            <NavLink to="/contact" content="Contact" id="navbar-contactLink"/>
         </nav>
     );
     

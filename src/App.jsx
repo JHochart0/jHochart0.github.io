@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './css/App.css';
 
@@ -15,28 +15,35 @@ import Header from './Components/Header.jsx';
 import ScrollToTopButton from './Components/ScrollToTopButton.jsx';
 
 
-
-
 function App() {
-  return (
-    <Router>
-        <div className="App">
-            <Header />
-            <div className="content">
-                <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/projects" element={<Projects/>} />
-                    <Route path="/skills" element={<Skills/>} />
-                    <Route path="/contact" element={<Contact/>} />
-                    <Route path="/email-sent" element={<EmailConfirmation/>} />
-                    <Route path="*" element={<NotFound404/>} />
-                </Routes>
+
+    // check if sessionStorage "redirect" exists, then redirect correctly to the NotFound404 page
+    if (sessionStorage.getItem("redirect")) {
+        const redirect = sessionStorage.getItem("redirect");
+        sessionStorage.removeItem("redirect");
+        window.history.replaceState(null, "", redirect);
+    }
+
+    
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <div className="content">
+                    <Routes>
+                        <Route path="/" element={<Home/>} />
+                        <Route path="/about" element={<About/>} />
+                        <Route path="/projects" element={<Projects/>} />
+                        <Route path="/skills" element={<Skills/>} />
+                        <Route path="/contact" element={<Contact/>} />
+                        <Route path="/email-sent" element={<EmailConfirmation/>} />
+                        <Route path="*" element={<NotFound404/>} />
+                    </Routes>
+                </div>
+                <ScrollToTopButton />
             </div>
-            <ScrollToTopButton />
-        </div>
-    </Router>
-  );
+        </Router>
+    );
 }
 
 export default App;
