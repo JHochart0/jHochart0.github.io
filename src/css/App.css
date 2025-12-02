@@ -43,6 +43,7 @@ body{
     margin-bottom: 40px;
     display:flex;
     justify-content:center;
-    padding: 20px;
-    height:5000px;
+    padding:20px;
+    padding-bottom:100px;
+
 }

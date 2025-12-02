@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+
+import usePageTitle from "../utils/usePageTitle";
+import useRevealOnScroll from "../utils/useRevealOnScroll";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -27,9 +31,11 @@ function Contact() {
         e.target.submit();
     };
 
+    usePageTitle("Contact");
+    useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
 
     return (
-        <div className="contact-container">
+        <div className="contact-container fade-in-side-left">
             <h1 className="contact-title">Me contacter</h1>
 
             <form

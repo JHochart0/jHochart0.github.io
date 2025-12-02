@@ -1,0 +1,132 @@
+:root {
+    --gold-stellar: #FFCC66;
+    --spatial-blue: #0A1E3F;
+    --spatial-blue-transparent: rgba(10, 30, 63, 0.3);
+    --spatial-blue-background: rgba(10, 30, 63, 0.8);
+    --void_black: #0B0B0F;
+    --white_moon: #FFFFFF;
+}
+
+/*********************************
+*************Animations***********
+*********************************/
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/*********************************
+*************Skills***************
+*********************************/
+
+.skills-container {
+    text-align: center;
+    color: var(--gold-stellar);
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px var(--gold-stellar);
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: var(--spatial-blue-background);
+    border: 1px solid var(--gold-stellar);
+    border-radius: 15px;
+    width:30vw;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--gold-stellar);
+    background-color: var(--spatial-blue-background);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.skill-card:nth-child(1) .skill-icon { color: #FF6347; }
+.skill-card:nth-child(2) .skill-icon { color: #4fd1ff; }
+.skill-card:nth-child(3) .skill-icon { color: #b792ff; }
+.skill-card:nth-child(4) .skill-icon { color: #7fff7f; }
+.skill-card:nth-child(5) .skill-icon { color: #ff9f1a; }
+.skill-card:nth-child(6) .skill-icon { color: #ff77ff; }
+
+.skill-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 10px;
+    border-radius : 90%;
+    width: 125px;
+    height:125px;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: var(--gold-stellar);
+}
+
+.skill-item:hover{
+    background-color : var(--gold-stellar);
+    color: var(--spatial-blue);
+    cursor : pointer;
+}
+
+.skill-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.skill-name{
+    font-size: 1rem;
+    
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
