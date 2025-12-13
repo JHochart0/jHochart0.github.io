@@ -1,0 +1,133 @@
+:root {
+    --gold-stellar: #FFCC66;
+    --spatial-blue: #0A1E3F;
+    --spatial-blue-transparent: rgba(10, 30, 63, 0.3);
+    --spatial-blue-background: rgba(10, 30, 63, 0.8);
+    --void_black: #0B0B0F;
+    --white_moon: #FFFFFF;
+}
+
+/*********************************
+*************Animations***********
+*********************************/
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/*********************************
+***********About container********
+*********************************/
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--gold-stellar);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/*********************************
+************About title***********
+*********************************/
+.about-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px var(--gold-stellar);
+}
+
+/*********************************
+*******About Introduction*********
+*********************************/
+.about-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 60px;
+    line-height: 1.7;
+}
+
+/*********************************
+**********About sections**********
+*********************************/
+.about-section {
+    background-color: var(--spatial-blue-background);
+    border: 1px solid var(--gold-stellar);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px var(--void_black);
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--gold-stellar);
+    background-color: var(--spatial-blue-background);
+}
+
+.about-section-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-section-bold{
+    text-shadow:0 0 6px var(--gold-stellar);
+}
+
+.about-section-link{
+    text-decoration: none;
+    color: var(--white_moon);
+    text-shadow: 0 0 6px var(--white_moon);
+}
+.about-section-link:hover{
+    color: var(--gold-stellar);
+    text-shadow: 0 0 6px var(--gold-stellar);
+    font-weight:bold;
+}
+
+/*********************************
+**********About NavLinks**********
+*********************************/
+.about-container .navLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white_moon);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-shadow: 0 0 6px var(--white_moon);
+}
+
+.about-container .navLink:hover {
+    color: var(--gold-stellar);
+    transform: translateX(4px);
+    text-shadow: 0 0 6px var(--gold-stellar);
+}
+
+.about-container .navLink.active {
+    color: var(--gold-stellar);
+    text-shadow: 0 0 6px var(--gold-stellar);
+}
+
