@@ -65,6 +65,48 @@
 }
 
 /*********************************
+*********About CV section*********
+*********************************/
+
+.about-cv {
+    text-align: center;
+}
+
+.cv-download-btn {
+    display: inline-block;
+    margin-top:20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--gold-stellar);
+    background-color: var(--spatial-blue);
+    color: var(--gold-stellar);
+    cursor: pointer;
+    transition: background-color 0.3s,
+                color 0.3s,
+                box-shadow 0.3s ease,
+                transform 0.1s,
+                text-shadow 0.3s ease;
+    box-shadow: 12px 8px 25px 10px var(--void_black);
+    margin-top:25px;
+    text-decoration:none;
+    text-shadow: 0 0 6px var(--gold-stellar);
+    font-size: 1rem;
+    margin:auto;
+    
+}
+
+.cv-download-btn:hover {
+    color: var(--white_moon);
+    box-shadow: 14px 10px 30px 12px var(--void_black);
+    transform: scale(1.03);
+    text-shadow: 0 0 8px var(--white_moon);
+}
+
+.cv-download-icon {
+    margin-right:10px;
+}
+
+/*********************************
 **********About sections**********
 *********************************/
 .about-section {

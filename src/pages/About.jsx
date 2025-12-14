@@ -7,6 +7,8 @@ import useRevealOnScroll from "../utils/useRevealOnScroll";
 
 import NavLink from "../Components/NavLink";
 
+import { FaDownload } from "react-icons/fa";
+
 function About() {
 
     usePageTitle("À propos");
@@ -30,15 +32,46 @@ function About() {
                 </p>
             </div>
 
+            <div className="about-section about-cv fade-in-side-right">
+                <h2 className="about-section-title">📄 Mon CV</h2>
+                <p>
+                    Vous pouvez télécharger mon CV pour consulter mon parcours,
+                    mes compétences et mes expériences en détail.
+                </p>
+
+                <a
+                    href="/cv/CV_Jovany_Hochart.pdf"
+                    download
+                    className="cv-download-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaDownload className="cv-download-icon" />
+                    Télécharger mon CV
+                </a>
+            </div>
+
             {/* Formations */}
             <div className="about-section fade-in-side-right">
                 <h2 className="about-section-title">🎓 Formations & diplômes</h2>
                 <p>
-                    J’ai suivi un parcours orienté informatique avec l’obtention
-                    d’un DUT et d’une licence en informatique .
-                    J’ai également entrepris une année de master en développement
-                    de jeux vidéo, renforçant mes compétences en programmation,
-                    en architecture logicielle et en gestion de projets.
+                    J’ai d'abord suivi un parcours orienté informatique à l'Université du Littoral Côte d'Opale de Calais, avec l’obtention
+                    d’un DUT et d’une licence dans ce domaine.
+                </p>
+                <p>
+                    J’ai également entrepris une première année de master 
+                    en informatique à l'Université Artois de Lens,
+                    que je n'ai pas poursuivi, renforçant mes compétences
+                    en programmation logicielles et web, en réseau, en système, en intelligence artificielle
+                    et en gestion de projets.
+                </p>
+                <p>
+                    À la suite de ces études, j'ai décidé de me concentrer sur le développement web
+                    en m'autoformant sur des technologies fréquemment utilisées telles que Node.js et ReactJs.
+                </p>
+                <p>
+                    J'ai aussi pris la décision d'essayer de me lancer en freelance et je suis donc actuellement
+                    accompagné par la BGE de Calais pour la création de ma micro-entreprise.
                 </p>
             </div>
 
@@ -56,7 +89,7 @@ function About() {
                     et des outils collaboratifs au sein d'une équipe de trois stagiaires développeurs.
                 </p>
                 <p>
-                    J'ai aussi réalisé bénévolement, en indépendant, un site vitrine entier pour 
+                    J'ai aussi réalisé bénévolement, en tant qu'indépendant, un site vitrine entier pour 
                     l'entreprise indépendante de mécanique automobile <b className="about-section-bold">DEPAN AUTO 62</b> disponible sur ce 
                     <a href="https://depan-auto-62.fr/" className="about-section-link"> lien</a>.
                 </p>
