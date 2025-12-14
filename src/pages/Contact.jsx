@@ -6,6 +6,7 @@ import useRevealOnScroll from "../utils/useRevealOnScroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaDownload } from "react-icons/fa";
 
 import '../css/Contact.css';
 
@@ -86,6 +87,18 @@ function Contact() {
                     </a>
                     </li>
                 </ul>
+            </div>
+            <div className="contact-cv">
+                <a
+                    href="/cv/CV_Jovany_Hochart.pdf"
+                    download
+                    className="cv-download-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaDownload className="cv-download-icon" />
+                    Télécharger mon CV
+                </a>
             </div>
         </div>
     )
