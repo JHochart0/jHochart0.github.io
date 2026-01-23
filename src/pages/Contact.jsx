@@ -46,7 +46,7 @@ function Contact() {
                 className="contact-form"
             >
                 
-                <input type="text" name="Nom" placeholder="Votre nom..." required />
+                <input type="text" name="Nom" placeholder="Votre nom complet..." required />
                 <input 
                     type="text" 
                     name="Adresse email" 

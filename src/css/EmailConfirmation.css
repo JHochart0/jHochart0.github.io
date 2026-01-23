@@ -10,10 +10,10 @@
 .emailconfirmation-container{
     display:flex;
     flex-direction:column;
+    height:100%;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     text-align:center;
-
 }
 
 
@@ -46,4 +46,92 @@
 .emailconfirmation-link-icon{
     text-align:center;
     margin-right:5px;
+}
+
+/********************************
+****** Responsive Rules *******
+********************************/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .emailconfirmation-container {
+        width: 70vw;
+        padding-top: 8vh;
+    }
+
+    .emailconfirmation-h1 {
+        font-size: 2rem;
+    }
+
+    #emailconfirmation-link{
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+
+}
+
+/* Tablets Landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .emailconfirmation-container {
+        width: 50vw;
+        padding-top: 6vh;
+    }
+
+    .emailconfirmation-h1 {
+        font-size: 2rem;
+    }
+
+    #emailconfirmation-link{
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .emailconfirmation-container {
+        width: 95vw;
+        padding-top: 5vh;
+    }
+
+    .emailconfirmation-h1 {
+        font-size: 1.7rem;
+    }
+
+    .emailconfirmation-p {
+        font-size: 1.4rem;
+    }
+
+
+    #emailconfirmation-link {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .emailconfirmation-link-icon {
+        margin-right: 8px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .emailconfirmation-container {
+        width: 80vw;
+        padding-top: 0;
+    }
+
+    .emailconfirmation-h1 {
+        font-size: 1.9rem;
+    }
+    
+    .emailconfirmation-p {
+        font-size: 1.4rem;
+    }
+
+    #emailConfirmation-link {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
 }

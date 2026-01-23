@@ -8,10 +8,12 @@
 }
 
 .notFound404-container{
-    text-align:center;
     display:flex;
-    align-items:center;
     flex-direction:column;
+    width:25vw;
+    height:100%;
+    justify-content:center;
+    align-items:center;
 }
 
 .notFound404-container p{
@@ -43,4 +45,94 @@
 .notFound404-link-icon{
     text-align:center;
     margin-right:5px;
+}
+
+/********************************
+****** Responsive Rules *******
+********************************/
+/* Tablets */
+@media (max-width: 1024px) {
+    .notFound404-container {
+        width: 70vw;
+        padding-top: 8vh;
+    }
+
+    .notFound404-container h1 {
+        font-size: 2rem;
+    }
+
+    .notFound404-container h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets Landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .notFound404-container {
+        width: 50vw;
+        padding-top: 6vh;
+    }
+
+    .notFound404-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .notFound404-container h2 {
+        font-size: 1.3rem;
+    }
+
+    #notFound404-link {
+        font-size: 1.2rem;
+        
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    .notFound404-container {
+        width: 90vw;
+        padding-top: 5vh;
+    }
+
+    .notFound404-container h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .notFound404-container h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #notFound404-link {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .notFound404-link-icon {
+        margin-right: 8px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .notFound404-container {
+        width: 80vw;
+        padding-top: 4vh;
+    }
+
+    .notFound404-container h1 {
+        font-size: 1.9rem;
+    }
+
+    .notFound404-container h2 {
+        font-size: 1.1rem;
+    }
+
+    #notFound404-link {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
 }

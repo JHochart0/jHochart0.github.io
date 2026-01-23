@@ -165,8 +165,9 @@
 }
 
 .cv-download-btn {
-    display: inline-block;
+    display: block;
     margin-top:20px;
+    max-width: 350px;
     padding: 10px 20px;
     border-radius: 12px;
     border: 2px solid var(--gold-stellar);
@@ -178,12 +179,13 @@
                 box-shadow 0.3s ease,
                 transform 0.1s,
                 text-shadow 0.3s ease;
-    box-shadow: 12px 8px 25px 10px var(--void_black);
+    box-shadow: 10px 6px 18px 6px var(--void_black);
     margin-top:25px;
     text-decoration:none;
     text-shadow: 0 0 6px var(--gold-stellar);
     font-size: 1rem;
     margin:auto;
+    box-sizing: border-box;
     
 }
 
@@ -196,4 +198,88 @@
 
 .cv-download-icon {
     margin-right:10px;
+}
+
+/**************************************
+********* Responsive Rules *************
+**************************************/
+
+/* Tablets */
+@media (max-width: 1044px) {
+    .contact-container {
+        width: 90%;
+        padding: 1.5rem;
+        max-height:750px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+}
+
+/* Tablet Landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .contact-container {
+        width: 70%;
+    }
+}
+
+/*  Mobiles */
+@media (max-width: 599px) {
+    .contact-container {
+        width: 95%;
+        padding: 1.2rem;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form textarea {
+        min-height:150px;
+    }
+
+    .contact-submit {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .contact-links h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-links a {
+        font-size: 1.1rem;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    .cv-download-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-title {
+        font-size: 1.9rem;
+    }
+
+    .contact-links {
+        margin-top: 2.5rem;
+    }
 }

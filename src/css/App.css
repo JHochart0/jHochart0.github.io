@@ -30,13 +30,13 @@ body{
 }
 
 
-
-
 /********************************
 ******Main content Section*******
 ********************************/
+/*main content of the site*/
 .content {
     overflow : hidden;
+    min-height:80vh;
     max-width: 90vw;
     margin: auto;
     margin-top: 40px;
