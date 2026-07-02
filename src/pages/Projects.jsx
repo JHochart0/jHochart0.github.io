@@ -9,6 +9,7 @@ function Projects() {
             Projets / Work In Progress...
         </div>
     );
+    
 }
 
 export default Projects;
